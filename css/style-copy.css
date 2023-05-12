@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: beige;
+    /* tipo de fuente */
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/circuit.png);
+
+
+
+
+}
+
+
+
+/* -----------------------NAV BAR----------------------------- */
+
+.main-img img {
+    max-width: 100%;
+    height: auto;
+    margin:auto;
+	display:block;
+   
+}
+
+
+
+h2 {
+    background-color: green;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* -----------------------NAV BAR END----------------------------- */
+/* -----------------------articles----------------------------- */
+figcaption{
+    color: #002a38;
+}
+
+/* -----------------------articles end----------------------------- */
+/* ----------------carrusel---------------------------------------- */
+.h2-c {
+    text-align: center;
+    background-color: yellow;
+    font-family: Menlo, monospace;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+}
+
+.carrusel {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.carrusel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 1030px;
+    /* max-width: 510px; */
+    scroll-behavior: smooth;
+}
+
+.carrusel-fotos {
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+}
+
+.carrusel-fotos img {
+    background: black;
+    border: 4px solid black;
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.carrusel-menu {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .carrusel-fotos {
+        overflow: hidden;
+    }
+
+    .carrusel-fotos img {
+        width: 500px;
+        height: 400px;
+    }
+
+    .carrusel-menu {
+        display: block;
+    }
+
+    .carrusel-menu img {
+        box-sizing: border-box;
+        width: 70px;
+        height: 60px;
+        border: 5px solid black;
+    }
+
+    .carrusel-menu img:hover {
+        border: none;
+    }
+}
+
+/* ----------------carrusel---------------------------------------- */
+/* ----------------cajitas---------------------------------------- */
+.caja {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    background: #889ccf;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #5878ca;
+}
+
+.grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.grid-item {
+    min-width: 250px;
+    max-width: 250px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 250px;
+    flex: 1 1 250px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper {
+    min-height: 50vh;
+    padding: 2rem 0;
+    background: #40424a;
+    color: #e4e4e8;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.grid-item figure {
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.05);
+}
+
+.grid-item figure img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    max-width: 100%;
+}
+
+.grid-item figcaption {
+    display: block;
+    padding: .625rem .5rem;
+    background: beige;
+}
+
+/* ----------------cajitas---------------------------------------- */
+/* -----------------------footer----------------------------- */
+footer .foot {
+    display: flex;
+    font-family: 'Sono', sans-serif;
+    justify-content: space-around;
+    align-items: center;
+    background: #023859;
+}
+
+footer nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+footer nav ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+
+}
+
+.foot li:hover~li p {
+    animation: wave-animation 0.3s infinite;
+}
+
+
+
+.foot div {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    background-color: #002a38;
+    line-height: 1.3;
+    font-family: Menlo, monospace;
+}
+
+@keyframes wave-animation {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    75% {
+        transform: rotate(-15deg);
+    }
+}
+
+
+/* -----------------------footer end----------------------------- */

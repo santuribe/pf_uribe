@@ -1,0 +1,73 @@
+/* ----------------cajitas---------------------------------------- */
+
+.caja {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    background: #889ccf;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #5878ca;
+}
+
+.grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.grid-item {
+    min-width: 250px;
+    max-width: 250px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 250px;
+    flex: 1 1 250px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper {
+    min-height: 50vh;
+    padding: 2rem 0;
+    background: #40424a;
+    color: #e4e4e8;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.grid-item {
+    figure {
+        padding: 0;
+        margin: 0;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.05);
+
+        img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    figcaption {
+        display: block;
+        padding: .625rem .5rem;
+        background: beige;
+    }
+}
+
+/* ----------------cajitas---------------------------------------- */
