@@ -204,6 +204,10 @@ footer nav ul li a {
     transform: rotate(-15deg);
   }
 }
+.bg-color {
+  background-color: #ffac00;
+}
+
 /* -----------------------articles----------------------------- */
 figcaption {
   color: #002a38;
